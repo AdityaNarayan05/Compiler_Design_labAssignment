@@ -1,0 +1,15 @@
+compiler design cdcd lab\ 2 
+➜  lab 2 lex 20U02065.l   
+➜  lab 2 gcc lex.yy.c 
+➜  lab 2 ./a.out
+7
+DIGIT
+i
+Not Digit
+9
+DIGIT
+0
+DIGIT
+u
+Not Digit
+end

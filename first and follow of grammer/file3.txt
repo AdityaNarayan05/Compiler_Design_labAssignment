@@ -1,0 +1,6 @@
+// input is from a file named file.txt
+// use e for epsilon
+// no white spaces
+E->E+T|T 
+T->T*F|F 
+F->(E)|t

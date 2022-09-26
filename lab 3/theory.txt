@@ -1,0 +1,17 @@
+Create a non recursive Predictive Parser
+
+Algorithm for non recursive Predictive Parsing:
+
+The main Concept ->With the help of FIRST() and FOLLOW() sets, this parsing can be done using just a stack that avoids the recursive calls. 
+For each rule, A->x in grammar G: 
+For each terminal ‘a’ contained in FIRST(A) add A->x to M[A, a] in the parsing table if x derives ‘a’ as the first symbol. 
+If FIRST(A) contains null production for each terminal ‘b’ in FOLLOW(A), add this production (A->null) to M[A, b] in the parsing table. 
+
+The Procedure: 
+ 
+In the beginning, the pushdown stack holds the start symbol of the grammar G. 
+At each step a symbol X is popped from the stack: 
+if X is a terminal then it is matched with the lookahead and lookahead is advanced one step, 
+if X is a non terminal symbol, then using lookahead and a parsing table (implementing the FIRST sets) a production is chosen and its right-hand side is pushed into the stack. 
+This process repeats until the stack and the input string become null (empty). 
+ 

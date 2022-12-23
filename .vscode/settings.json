@@ -1,5 +1,9 @@
 {
     "cSpell.words": [
         "pushdown"
-    ]
+    ],
+    "files.associations": {
+        "*.ejs": "html",
+        "vector": "cpp"
+    }
 }

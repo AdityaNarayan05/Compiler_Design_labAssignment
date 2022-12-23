@@ -1,0 +1,5 @@
+// input is from a file named input.txt
+// use e for epsilon
+// no white spaces
+E->BB
+B->cB|d

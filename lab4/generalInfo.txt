@@ -1,0 +1,2 @@
+Create LR(K) parsers;
+1:LR(0) and SLR(1)cna be form in one table
